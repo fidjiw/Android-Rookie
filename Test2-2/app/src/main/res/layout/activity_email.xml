@@ -1,53 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
     android:orientation="vertical"
-    tools:context=".email">
+    tools:context=".email"
+    android:background="@drawable/back2">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="发送给："
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/email_to"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
 
     <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="主题："
-    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主题："
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
 
     <EditText
         android:id="@+id/email_subject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailSubject"/>
+        android:inputType="textEmailSubject"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="内容："
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="160dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/email_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="start|top"
         android:lines="10"
-        android:gravity="start|top" />
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="186dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="发送"/>
-</LinearLayout>
+        android:text="发送"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
