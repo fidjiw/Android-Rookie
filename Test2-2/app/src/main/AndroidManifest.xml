@@ -14,8 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".get_guess"
-            android:parentActivityName=".get_text"></activity>
+        <activity android:name=".email"></activity>
+        <activity
+            android:name=".get_guess"
+            android:parentActivityName=".get_text" />
         <activity android:name=".get_text" />
         <activity android:name=".MainActivity" />
         <activity android:name=".video" />

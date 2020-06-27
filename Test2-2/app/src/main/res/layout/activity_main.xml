@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,32 +13,49 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="提示" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/button"
+        android:layout_centerVertical="true"
         android:text="拨打电话" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="益达学生管理系统"/>
+        android:layout_toRightOf="@id/button"
+        android:layout_centerVertical="true"
+        android:text="学生系统"/>
 
     <Button
     android:id="@+id/button4"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+        android:layout_above="@id/button"
+        android:layout_centerHorizontal="true"
     android:text="播放视频"/>
 
     <Button
-        android:id="@+id/button5"
+    android:id="@+id/button5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+    android:text="输入猜测"/>
+
+    <Button
+        android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="输入猜测"/>
+        android:layout_above="@id/button4"
+        android:layout_centerHorizontal="true"
+        android:text="发送邮箱"/>
 
 
 
-</LinearLayout>
+</RelativeLayout>
